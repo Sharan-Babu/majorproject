@@ -33,9 +33,9 @@ if st.button("Search"):
 		if len(anchor_vertices_list) == 0:
 			anchor_vertices_list.append(x)
 			children_news_info.append([])
-			sentences_list.append(x['summary'])
+			sentences_list.append(x['title'])
 		else:
-			main_article_summary = x['summary']
+			main_article_summary = x['title']
 			main_article_embedding = embedder.encode(main_article_summary)
 			remaining_articles_embeddings = embedder.encode(sentences_list)
 			cos_sim = util.cos_sim(main_article_embedding, remaining_articles_embeddings)[0]
@@ -51,7 +51,7 @@ if st.button("Search"):
 			if closest_to == -1:
 				anchor_vertices_list.append(x)
 				children_news_info.append([])
-				sentences_list.append(x['summary'])
+				sentences_list.append(x['title'])
 			else:
 				children_news_info[closest_to].append(x)
 							
