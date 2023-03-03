@@ -18,7 +18,7 @@ def load_model():
 	return SentenceTransformer('msmarco-distilbert-base-tas-b')
 
 
-search_term = st.text_input("Enter query","russia vs ukraine")
+search_term = st.text_input("Enter query","russia vs ukraine war")
 
 if st.button("Search"):
 	embedder = load_model()
