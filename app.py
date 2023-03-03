@@ -70,8 +70,8 @@ if st.button("Search"):
 	# with open('children_news_info','rb') as file:
 	#     children_news_info = pickle.load(file)    
 
-	st.write(anchor_vertices_list)
-	st.write(children_news_info)
+	#st.write(anchor_vertices_list)
+	#st.write(children_news_info)
 
 
 
