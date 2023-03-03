@@ -93,10 +93,12 @@ if st.button("Search"):
 		st.write(summary)
 		
 		if len(children)>0:
-			st.markdown("**Related Articles (ID)**:")
-			for related_article in children:
-				#st.markdown(f": ")
-				st.markdown(f"**{children_news_info[related_article]['title']}**: {related_article}")
+			for y in children:
+				with st.expander(y[title]):
+					st.write(f"News Link: {y['link']}")
+					st.image(y['media'],caption="News Thumbnail")
+					st.markdown("#### Summary")
+					st.write(y['summary'])
 
 		st.write("")
 		st.write("")	
