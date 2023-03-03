@@ -22,7 +22,7 @@ search_term = st.text_input("Enter query","russia vs ukraine")
 
 if st.button("Search"):
 	embedder = load_model()
-	news_articles = newscatcherapi.get_search(q=search_term, lang='en', page_size=5)
+	news_articles = newscatcherapi.get_search(q=search_term, lang='en', page_size=20)
 	news_articles = news_articles['articles']
 
 	anchor_vertices_list = []
