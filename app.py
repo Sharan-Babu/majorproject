@@ -96,7 +96,7 @@ if st.button("Search"):
 			for y in children:
 				with st.expander(y['title']):
 					st.write(f"News Link: {y['link']}")
-					st.image(y['media'],caption="News Thumbnail")
+					#st.image(y['media'],caption="News Thumbnail")
 					st.markdown("#### Summary")
 					st.write(y['summary'])
 
