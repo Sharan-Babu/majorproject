@@ -11,7 +11,7 @@ st.caption('Eclectic News Search Engine')
 API_KEY = '3h7H4_yMu2KchsDvXCt2x5TZ4m002_G8myOud-tPjl8'
 newscatcherapi = NewsCatcherApiClient(x_api_key=API_KEY)
   
-threshold = 0.7
+threshold = 0.8
 
 @st.cache_resource
 def load_model():
