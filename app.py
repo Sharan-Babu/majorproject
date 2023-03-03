@@ -103,24 +103,3 @@ if st.button("Search"):
 		st.write("")
 		st.write("")	
 		st.markdown("<hr>",unsafe_allow_html=True)
-
-
-	st.title("Search Related News")
-	related_news_id = st.text_input("News ID","8ee07b4cdb24bf72d877bb0834132495")
-	st.write("")
-
-	if st.button("Search"):
-		st.write("")
-		st.write("")
-		article = children_news_info[related_news_id]
-		link = article['link']
-		media = article['media']
-		rank = article['rank']
-		summary = article['summary']
-		title = article['title']
-
-		st.subheader(f"{title}")
-		st.write(f"News Link: {link}")
-		st.image(media)
-		st.markdown("#### Summary")
-		st.write(summary)
