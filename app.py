@@ -8,7 +8,7 @@ from sentence_transformers import SentenceTransformer, util
 
 st.title('Gemini 👥')
 st.caption('Eclectic News Search Engine')
-API_KEY = '3h7H4_yMu2KchsDvXCt2x5TZ4m002_G8myOud-tPjl8'
+API_KEY = 'l7bpB9Ps5aJiqti3TtvAVPtsHAmM5pfTB6AuP9sPrCY'
 newscatcherapi = NewsCatcherApiClient(x_api_key=API_KEY)
   
 threshold = 0.75
